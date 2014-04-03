@@ -1,0 +1,39 @@
+{
+  "name": "<%= name %>",
+  "version": "0.0.0",
+  "description": "<%= description %>",
+  "main": "lib",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "lodash": "2.x",
+    "minimatch": "0.2.x",
+    "roots-util": "0.0.2",
+  },
+  "devDependencies": {
+    "coffee-script": "1.7.x",
+    "mocha": "*",
+    "should": "*",
+    "roots": "3.x"
+  },
+  "peerDependencies": {
+    "roots": "3.x"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<%= github_username %>/<%= name %>.git"
+  },
+  "keywords": [
+    "roots-extension"
+  ],
+  "author": "<%= github_username %>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/<%= github_username %>/<%= name %>/issues"
+  },
+  "homepage": "https://github.com/<%= github_username %>/<%= name %>"
+}
