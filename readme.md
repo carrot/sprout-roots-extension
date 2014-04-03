@@ -1,6 +1,6 @@
-# sprout-roots-extension
+# Sprout Template: Roots Extension
 
-a sprout template for generating roots extensions
+a [sprout](http://github.com/carrot/sprout) template for generating [roots extensions](http://roots.readthedocs.org/en/latest/extensions.html)
 
 ### Installation
 
