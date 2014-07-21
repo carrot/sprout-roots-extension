@@ -5,7 +5,11 @@ a [sprout](http://github.com/carrot/sprout) template for generating [roots exten
 ### Installation
 
 - `npm install sprout -g`
-- `sprout add node https://github.com/kylemac/sprout-roots-extension.git`
+- `sprout add roots_ext https://github.com/carrot/sprout-roots-extension.git`
+
+### Usage
+
+`sprout init roots_ext <your_project_name>`
 
 ### Options
 
