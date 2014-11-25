@@ -2,4 +2,4 @@
 
 module.exports =
   ignores: ["**/_*", "**/.DS_Store"]
-  extensions: [new <%= S(name).underscore().s %>]
+  extensions: [<%= S(name).underscore().s %>()]

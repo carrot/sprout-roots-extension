@@ -1,7 +1,7 @@
 <%= S(name).capitalize().s %>
 =============================
 
-[![npm](https://badge.fury.io/js/<%= name %>.png)](http://badge.fury.io/js/<%= name %>) [![tests](https://travis-ci.org/<%= github_username %>/<%= name %>.png?branch=master)](https://travis-ci.org/<%= github_username %>/<%= name %>) [![dependencies](https://david-dm.org/<%= github_username %>/<%= name %>.png?theme=shields.io)](https://david-dm.org/<%= github_username %>/<%= name %>)
+[![npm](https://badge.fury.io/js/<%= name %>.png)](http://badge.fury.io/js/<%= name %>) [![tests](https://travis-ci.org/<%= repo %>.png?branch=master)](https://travis-ci.org/<%= repo %>) [![dependencies](https://david-dm.org/<%= repo %>.png?theme=shields.io)](https://david-dm.org/<%= repo %>) [![Coverage Status](https://img.shields.io/coveralls/<%= repo %>.svg)](https://coveralls.io/r/<%= repo %>?branch=master)
 
 <%= description %>
 
@@ -17,7 +17,7 @@
   <%= S(name).underscore().s %> = require('<%= name %>')
 
   module.exports =
-    extensions: [new <%= S(name).underscore().s %>]
+    extensions: [<%= S(name).underscore().s %>()]
   ```
 
 ### Usage
