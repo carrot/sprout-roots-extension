@@ -18,22 +18,26 @@
     "roots": "3.x"
   },
   "peerDependencies": {
-    "roots": "3.x"
+    "roots": "3.x",
+    "coveralls": "2.x",
+    "istanbul": "0.3.x"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "coverage": "make build; NODE_ENV=test istanbul cover ./node_modules/mocha/bin/_mocha; make unbuild; open coverage/lcov-report/index.html;",
+    "coveralls": "make build; make coveralls; make unbuild;"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<%= github_username %>/<%= name %>.git"
+    "url": "https://github.com/<%= repo %>.git"
   },
   "keywords": [
     "roots-extension"
   ],
-  "author": "<%= github_username %>",
+  "author": "<%= author %>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/<%= github_username %>/<%= name %>/issues"
+    "url": "https://github.com/<%= repo %>/issues"
   },
-  "homepage": "https://github.com/<%= github_username %>/<%= name %>"
+  "homepage": "https://github.com/<%= repo %>"
 }

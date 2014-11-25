@@ -14,5 +14,6 @@ a [sprout](http://github.com/carrot/sprout) template for generating [roots exten
 ### Options
 
 - **name** (name of template)
-- **github_username** (name of github user)
+- **repo** (name of the github repo following the format `<user>/<repo>`)
+- **author** (name of the package author)
 - **description** (a short description of the template)

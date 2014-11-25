@@ -6,8 +6,13 @@ exports.configure = [
   },
   {
     type: 'input',
-    name: 'github_username',
-    message: 'What is your github username?'
+    name: 'repo'
+    message: 'Where will this repo be located on Github? (use format: carrot/sprout)'
+  },
+  {
+    type: 'input',
+    name: 'author',
+    message: "What is the author's name?"
   },
   {
     type: 'input',
