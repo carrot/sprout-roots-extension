@@ -3,28 +3,23 @@
   "version": "0.0.0",
   "description": "<%= description %>",
   "main": "lib",
-  "directories": {
-    "test": "test"
-  },
   "dependencies": {
     "lodash": "2.x",
-    "minimatch": "0.2.x",
-    "roots-util": "0.0.4"
+    "minimatch": "2.x",
+    "roots-util": "0.1.x"
   },
   "devDependencies": {
+    "chai": "1.x",
+    "chai-fs": "0.1.x",
     "coffee-script": "1.7.x",
-    "mocha": "*",
-    "should": "*",
-    "roots": "3.x"
-  },
-  "peerDependencies": {
-    "roots": "3.x",
     "coveralls": "2.x",
-    "istanbul": "0.3.x"
+    "istanbul": "0.3.x",
+    "mocha": "2.x",
+    "roots": "3.0.0-rc.11"
   },
   "scripts": {
-    "test": "mocha",
-    "coverage": "make build; NODE_ENV=test istanbul cover ./node_modules/mocha/bin/_mocha; make unbuild; open coverage/lcov-report/index.html;",
+    "test": "./node_modules/.bin/mocha",
+    "coverage": "make build; NODE_ENV=test ./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha; make unbuild; open coverage/lcov-report/index.html;",
     "coveralls": "make build; make coveralls; make unbuild;"
   },
   "repository": {
@@ -32,7 +27,7 @@
     "url": "https://github.com/<%= repo %>.git"
   },
   "keywords": [
-    "roots-extension"
+    "rootsextension"
   ],
   "author": "<%= author %>",
   "license": "MIT",
