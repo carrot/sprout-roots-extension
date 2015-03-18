@@ -7,7 +7,7 @@ path = require 'path'
 # http://roots.readthedocs.org/en/latest/extensions.html
 
 module.exports = ->
-  class <%= S('-' + name).collapseWhitespace().camelize().s %>
+  class <%= S('-' + name).camelize().value() %>
 
     constructor: (@roots) ->
       # console.log @roots

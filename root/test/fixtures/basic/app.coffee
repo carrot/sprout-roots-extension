@@ -1,5 +1,5 @@
-<%= S(name).underscore().s %> = require '../../..'
+<%= S(name).camelize().value() %> = require '../../..'
 
 module.exports =
   ignores: ["**/_*", "**/.DS_Store"]
-  extensions: [<%= S(name).underscore().s %>()]
+  extensions: [<%= S(name).camelize().value() %>()]

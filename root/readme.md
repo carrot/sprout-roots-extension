@@ -1,4 +1,4 @@
-<%= S(name).capitalize().s %>
+<%= S(name).capitalize().value() %>
 =============================
 
 [![npm](https://badge.fury.io/js/<%= name %>.svg?style=flat)](http://badge.fury.io/js/<%= name %>) [![tests](https://badge.fury.io/travis/<%= repo %>/master.svg?style=flat)](https://travis-ci.org/<%= repo %>) [![dependencies](https://badge.fury.io/gemnasium/<%= repo %>.svg?style=flat)](https://gemnasium.com/<%= repo %>) [![Coverage Status](https://img.shields.io/coveralls/<%= repo %>.svg?style=flat)](https://coveralls.io/r/<%= repo %>?branch=master)
@@ -14,10 +14,10 @@
 - modify your `app.coffee` file to include the extension, as such
 
   ```coffee
-  <%= S(name).underscore().s %> = require('<%= name %>')
+  <%= S(name).camelize().value() %> = require('<%= name %>')
 
   module.exports =
-    extensions: [<%= S(name).underscore().s %>()]
+    extensions: [<%= S(name).camelize().value() %>()]
   ```
 
 ### Usage

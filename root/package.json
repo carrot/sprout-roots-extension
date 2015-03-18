@@ -15,7 +15,7 @@
     "coveralls": "2.x",
     "istanbul": "0.3.x",
     "mocha": "2.x",
-    "roots": "3.0.0-rc.11"
+    "roots": "3.0.x"
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha",
