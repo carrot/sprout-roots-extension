@@ -4,7 +4,7 @@ a [sprout](http://github.com/carrot/sprout) template for generating [roots exten
 
 ### Installation
 
-- `npm install sprout -g`
+- `npm install sprout-cli -g`
 - `sprout add roots_ext https://github.com/carrot/sprout-roots-extension.git`
 
 ### Usage
