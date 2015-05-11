@@ -1,6 +1,6 @@
 {
-  "name": "<%= name %>",
-  "version": "0.0.0",
+  "name": "<%= S.slugify(name) %>",
+  "version": "0.0.1",
   "description": "<%= description %>",
   "main": "lib",
   "dependencies": {

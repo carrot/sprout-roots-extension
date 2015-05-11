@@ -7,7 +7,7 @@ path = require 'path'
 # http://roots.readthedocs.org/en/latest/extensions.html
 
 module.exports = ->
-  class <%= S('-' + name).camelize().value() %>
+  class <%= S.camelize('-' + name) %>
 
     constructor: (@roots) ->
       # console.log @roots
@@ -15,28 +15,28 @@ module.exports = ->
     # fs: ->
       # category: 'foo'
       # extract: true
-      # detect: (f) =>
+      # detect: (f) ->
         # path.extname(f.relative) == 'js'
 
     # compile_hooks: ->
       # category: 'foo'
 
-      # before_file: (ctx) =>
+      # before_file: (ctx) ->
         # ctx.content = ctx.content.toUpperCase()
 
-      # after_file: (ctx) =>
+      # after_file: (ctx) ->
         # ctx.content = ctx.content.toUpperCase()
 
-      # before_pass: (ctx) =>
+      # before_pass: (ctx) ->
         # ctx.content = ctx.content.toUpperCase()
 
-      # after_pass: (ctx) =>
+      # after_pass: (ctx) ->
         # ctx.content = ctx.content.toUpperCase()
 
       # write: ->
         # false
 
     # category_hooks: ->
-      # after: (ctx) =>
+      # after: (ctx) ->
           # output = path.join(ctx.roots.config.output_path(), 'build.js')
           # nodefn.call(fs.writeFile, output, @contents)

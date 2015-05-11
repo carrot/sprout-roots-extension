@@ -1,7 +1,6 @@
-<%= S(name).capitalize().value() %>
-=============================
+# <%= S.slugify(name) %>
 
-[![npm](https://badge.fury.io/js/<%= name %>.svg?style=flat)](http://badge.fury.io/js/<%= name %>) [![tests](https://badge.fury.io/travis/<%= repo %>/master.svg?style=flat)](https://travis-ci.org/<%= repo %>) [![dependencies](https://badge.fury.io/gemnasium/<%= repo %>.svg?style=flat)](https://gemnasium.com/<%= repo %>) [![Coverage Status](https://img.shields.io/coveralls/<%= repo %>.svg?style=flat)](https://coveralls.io/r/<%= repo %>?branch=master)
+[![npm](https://badge.fury.io/js/<%= S.slugify(name) %>.svg?style=flat)](http://badge.fury.io/js/<%= name %>) [![tests](https://badge.fury.io/travis/<%= repo %>/master.svg?style=flat)](https://travis-ci.org/<%= repo %>) [![dependencies](https://badge.fury.io/gemnasium/<%= repo %>.svg?style=flat)](https://gemnasium.com/<%= repo %>) [![Coverage Status](https://img.shields.io/coveralls/<%= repo %>.svg?style=flat)](https://coveralls.io/r/<%= repo %>?branch=master)
 
 <%= description %>
 
@@ -14,10 +13,10 @@
 - modify your `app.coffee` file to include the extension, as such
 
   ```coffee
-  <%= S(name).camelize().value() %> = require('<%= name %>')
+  <%= S.camelize(name) %> = require('<%= S.slugify(name) %>')
 
   module.exports =
-    extensions: [<%= S(name).camelize().value() %>()]
+    extensions: [<%= S.camelize(name) %>()]
   ```
 
 ### Usage
