@@ -27,7 +27,9 @@
     "url": "https://github.com/<%= repo %>.git"
   },
   "keywords": [
-    "rootsextension"
+    "rootsextension",
+    "roots",
+    "roots-ext"
   ],
   "author": "<%= author %>",
   "license": "MIT",
