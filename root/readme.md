@@ -1,6 +1,9 @@
 # <%= S.slugify(name) %>
 
-[![npm](https://badge.fury.io/js/<%= S.slugify(name) %>.svg?style=flat)](http://badge.fury.io/js/<%= name %>) [![tests](https://badge.fury.io/travis/<%= repo %>/master.svg?style=flat)](https://travis-ci.org/<%= repo %>) [![dependencies](https://badge.fury.io/gemnasium/<%= repo %>.svg?style=flat)](https://gemnasium.com/<%= repo %>) [![Coverage Status](https://img.shields.io/coveralls/<%= repo %>.svg?style=flat)](https://coveralls.io/r/<%= repo %>?branch=master)
+[![npm](https://badge.fury.io/js/<%= S.slugify(name) %>.svg?style=flat)](http://badge.fury.io/js/<%= name %>) [![tests](https://badge.fury.io/travis/<%= repo %>/master.svg?style=flat)](https://travis-ci.org/<%= repo %>)
+[![Coverage Status](https://img.shields.io/coveralls/<%= repo %>.svg?style=flat)](https://coveralls.io/r/<%= repo %>?branch=master)
+[![dependencies](https://badge.fury.io/gemnasium/<%= repo %>.svg?style=flat)](https://gemnasium.com/<%= repo %>)
+[![devDependencies](https://img.shields.io/david/dev/<%= repo %>.svg)](https://gemnasium.com/<%= repo %>)
 
 <%= description %>
 
